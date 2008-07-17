@@ -5,13 +5,13 @@ zone is represented internally as a set of observances, each of which
 describes the offset from GMT for a given time period.
 
 Runtime requirements:
-  perl-5.10.0-4
+  perl-5.10.0-5
   perl-Class-Singleton-1.4-1
   perl-Params-Validate-0.91-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygport-0.3.11-1
+  cygport-0.3.12-1
   make-3.81-1
 
 Canonical website:
@@ -23,15 +23,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-DateTime-TimeZone-0.76-X-src.tar.bz2
+  unpack perl-DateTime-TimeZone-0.78-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-DateTime-TimeZone-0.76-X.cygport all
+  cygport ./perl-DateTime-TimeZone-0.78-X.cygport all
 
 This will create:
-  /usr/src/perl-DateTime-TimeZone-0.76-X-src.tar.bz2
-  /usr/src/perl-DateTime-TimeZone-0.76-X.tar.bz2
+  /usr/src/perl-DateTime-TimeZone-0.78-X-src.tar.bz2
+  /usr/src/perl-DateTime-TimeZone-0.78-X.tar.bz2
 
 -------------------------------------------
 
@@ -201,6 +201,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/America/Regina.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/America/Resolute.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/America/Rio_Branco.pm
+  /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/America/Santarem.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/America/Santiago.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/America/Santo_Domingo.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/America/Sao_Paulo.pm
@@ -437,9 +438,19 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/UTC.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZoneCatalog.pm
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/DateTime/TimeZone/.packlist
-  /usr/share/doc/perl-DateTime-TimeZone-0.76/Changes
-  /usr/share/doc/perl-DateTime-TimeZone-0.76/LICENSE
-  /usr/share/doc/perl-DateTime-TimeZone-0.76/README
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Floating.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Local.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Local/Unix.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Local/VMS.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Local/Win32.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/OffsetOnly.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/OlsonDB.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/UTC.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZoneCatalog.html
+  /usr/share/doc/perl-DateTime-TimeZone-0.78/Changes
+  /usr/share/doc/perl-DateTime-TimeZone-0.78/LICENSE
+  /usr/share/doc/perl-DateTime-TimeZone-0.78/README
   /usr/share/man/man3/DateTime.TimeZone.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.Floating.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.Local.3pm.gz
@@ -454,6 +465,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.78-1 -----
+Version bump.
 
 ----- version 0.76-1 -----
 Version bump.
