@@ -11,7 +11,7 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygport-0.3.12-1
+  cygport-0.4.0-1
   make-3.81-1
 
 Canonical website:
@@ -23,15 +23,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-DateTime-TimeZone-0.78-X-src.tar.bz2
+  unpack perl-DateTime-TimeZone-0.7904-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-DateTime-TimeZone-0.78-X.cygport all
+  cygport ./perl-DateTime-TimeZone-0.7904-X.cygport all
 
 This will create:
-  /usr/src/perl-DateTime-TimeZone-0.78-X-src.tar.bz2
-  /usr/src/perl-DateTime-TimeZone-0.78-X.tar.bz2
+  /usr/src/perl-DateTime-TimeZone-0.7904-X-src.tar.bz2
+  /usr/src/perl-DateTime-TimeZone-0.7904-X.tar.bz2
 
 -------------------------------------------
 
@@ -329,7 +329,10 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Australia/Melbourne.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Australia/Perth.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Australia/Sydney.pm
+  /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/CET.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/CST6CDT.pm
+  /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Catalog.pm
+  /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/EET.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/EST.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/EST5EDT.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Europe/Amsterdam.pm
@@ -392,6 +395,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Local/Unix.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Local/VMS.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Local/Win32.pm
+  /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/MET.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/MST.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/MST7MDT.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/OffsetOnly.pm
@@ -436,9 +440,10 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Pacific/Wake.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/Pacific/Wallis.pm
   /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/UTC.pm
-  /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZoneCatalog.pm
+  /usr/lib/perl5/vendor_perl/5.10/DateTime/TimeZone/WET.pm
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/DateTime/TimeZone/.packlist
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone.html
+  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Catalog.html
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Floating.html
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Local.html
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/Local/Unix.html
@@ -447,11 +452,11 @@ Files included in the binary package:
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/OffsetOnly.html
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/OlsonDB.html
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/UTC.html
-  /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZoneCatalog.html
-  /usr/share/doc/perl-DateTime-TimeZone-0.78/Changes
-  /usr/share/doc/perl-DateTime-TimeZone-0.78/LICENSE
-  /usr/share/doc/perl-DateTime-TimeZone-0.78/README
+  /usr/share/doc/perl-DateTime-TimeZone-0.7904/Changes
+  /usr/share/doc/perl-DateTime-TimeZone-0.7904/LICENSE
+  /usr/share/doc/perl-DateTime-TimeZone-0.7904/README
   /usr/share/man/man3/DateTime.TimeZone.3pm.gz
+  /usr/share/man/man3/DateTime.TimeZone.Catalog.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.Floating.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.Local.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.Local.Unix.3pm.gz
@@ -460,11 +465,13 @@ Files included in the binary package:
   /usr/share/man/man3/DateTime.TimeZone.OffsetOnly.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.OlsonDB.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.UTC.3pm.gz
-  /usr/share/man/man3/DateTime.TimeZoneCatalog.3pm.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.7904-1 -----
+Version bump.
 
 ----- version 0.78-1 -----
 Version bump.
