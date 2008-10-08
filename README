@@ -23,15 +23,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-DateTime-TimeZone-0.7904-X-src.tar.bz2
+  unpack perl-DateTime-TimeZone-0.81-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-DateTime-TimeZone-0.7904-X.cygport all
+  cygport ./perl-DateTime-TimeZone-0.81-X.cygport all
 
 This will create:
-  /usr/src/perl-DateTime-TimeZone-0.7904-X-src.tar.bz2
-  /usr/src/perl-DateTime-TimeZone-0.7904-X.tar.bz2
+  /usr/src/perl-DateTime-TimeZone-0.81-X-src.tar.bz2
+  /usr/src/perl-DateTime-TimeZone-0.81-X.tar.bz2
 
 -------------------------------------------
 
@@ -452,9 +452,9 @@ Files included in the binary package:
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/OffsetOnly.html
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/OlsonDB.html
   /usr/share/doc/perl-5.10.0/html/html3/site/lib/DateTime/TimeZone/UTC.html
-  /usr/share/doc/perl-DateTime-TimeZone-0.7904/Changes
-  /usr/share/doc/perl-DateTime-TimeZone-0.7904/LICENSE
-  /usr/share/doc/perl-DateTime-TimeZone-0.7904/README
+  /usr/share/doc/perl-DateTime-TimeZone-0.81/Changes
+  /usr/share/doc/perl-DateTime-TimeZone-0.81/LICENSE
+  /usr/share/doc/perl-DateTime-TimeZone-0.81/README
   /usr/share/man/man3/DateTime.TimeZone.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.Catalog.3pm.gz
   /usr/share/man/man3/DateTime.TimeZone.Floating.3pm.gz
@@ -469,6 +469,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.81-1 -----
+Version bump.
 
 ----- version 0.7904-1 -----
 Version bump.
