@@ -1,0 +1,8 @@
+CPAN_AUTHOR=drolsky
+inherit perl
+
+NAME="perl-DateTime-TimeZone"
+VERSION=1.56
+RELEASE=1
+CATEGORY="Perl"
+SUMMARY="Time zone object base class"
