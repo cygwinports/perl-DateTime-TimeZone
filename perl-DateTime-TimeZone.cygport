@@ -6,3 +6,5 @@ VERSION=1.56
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Time zone object base class"
+
+REQUIRES="tzcode"
