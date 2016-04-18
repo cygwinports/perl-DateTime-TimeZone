@@ -9,4 +9,4 @@ SUMMARY="Time zone object base class"
 
 ARCH=noarch
 
-REQUIRES="tzcode"
+REQUIRES="tzdata"
